@@ -1,0 +1,12 @@
+img{
+  max-width: 10rem;
+  max-height: 20rem;
+}
+.titulo-home{
+  background-image: url('../public/high-mountain-scenery-wallpaper-2560x1080_14.jpg');
+}
+
+footer{
+  height: 5rem;
+  padding: 12px;
+}
