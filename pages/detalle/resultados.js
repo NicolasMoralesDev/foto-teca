@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import { getFotos } from "../../api/HomeGet";
 import Pagination from "react-bootstrap/Pagination";
@@ -9,12 +9,14 @@ import { useSearchParams } from 'next/navigation';
 
 const resultados = () => {
 
-    const searchParams = useSearchParams();
-    let queryid = searchParams.get("keyword");
+      const searchParams = useSearchParams();
+
+      const [search, setSearch] = useState();
+
+
     const [busqueda, setBusqueda] = useState([]);
     const [total, setTotal] = useState();
     const [page, setPage] = useState(1);
-
     let paginacion = [];
   
     for (let i = 1; i <= total; i++) {
@@ -23,7 +25,10 @@ const resultados = () => {
   
   
     async function fetchData(page) {
-      const response = await getFotos(`${queryid}`, page);
+      
+      const queryid = searchParams.get("keyword");
+      setSearch(queryid);
+      const response = await getFotos(search, page);
       const { total_pages } = response;
       setBusqueda(response.results);
       setTotal(total_pages);

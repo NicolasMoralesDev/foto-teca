@@ -20,12 +20,12 @@ export default function Home() {
         <h1 className='text-center titulo-home text-white p-5'>Buscador de Imagenes Online</h1>
         </div>
 
-       <div className='m-5 mt-0 gap-2'>
-       <div>
+      <div className='m-5 mt-0 gap-2'>
+      <div>
     <Buscador/>
         </div>
         <Resultados/>  
-       </div>
+      </div>
     
     </>
 

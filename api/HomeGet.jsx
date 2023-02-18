@@ -2,7 +2,7 @@
 const url = "https://api.unsplash.com/search/photos";
 
 export const getFotos = async (busqueda, page=1) => {
-  
+
   const response = await fetch(
     `${url}?page=${page}&query=${busqueda}`,
     {
