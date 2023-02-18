@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
-import { getFotos } from "../../api/HomeGet";
+import { getFotos } from "../api/HomeGet";
 import Pagination from "react-bootstrap/Pagination";
-import Placeholders from "../../components/Placeholders";
+import Placeholders from "../components/Placeholders";
 import Link from "next/link";
 import { useSearchParams } from 'next/navigation';
 
@@ -11,7 +11,6 @@ const resultados = () => {
 
       const searchParams = useSearchParams();
 
-      const [search, setSearch] = useState();
 
 
     const [busqueda, setBusqueda] = useState([]);
@@ -26,13 +25,11 @@ const resultados = () => {
   
     async function fetchData(page) {
       
-      const queryid = searchParams.get("keyword");
-      setSearch(queryid);
-      const response = await getFotos(search, page);
+      const queryid = searchParams.get("q");
+      const response = await getFotos(queryid, page);
       const { total_pages } = response;
       setBusqueda(response.results);
       setTotal(total_pages);
-      console.log(response.results)
     }
   
     useEffect(() => {

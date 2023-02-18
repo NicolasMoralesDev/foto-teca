@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Buscador from '../components/Buscador'
-import Resultados from './detalle/resultados'
+import Resultados from './resultados'
 
 
 export default function Home() {

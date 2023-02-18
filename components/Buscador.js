@@ -6,15 +6,15 @@ import swal from 'sweetalert';
 import { useRouter } from "next/router";
 
   const Buscador = () => {
+    const router = useRouter();
 
   const buscar = (e) => {
-    const router = useRouter();
 
       e.preventDefault()
       const busqueda = e.currentTarget.keyword.value.trim();
         if ( busqueda.length < 4 ) {  swal("Por favor ingrese una busqueda!", "maximo 4 caracteres" , "warning");
       } else {
-      router.push( `detalle/resultados/keyword=${busqueda}`);
+      router.push( `resultados?q=${busqueda}`);
     
     } }
   

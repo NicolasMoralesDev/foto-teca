@@ -12,7 +12,7 @@ const Navegacion = () => {
           <Navbar.Brand href="/">Buscador de Imagenes</Navbar.Brand>
           <Nav className="me-auto">
             <Link className="nav-link"  href="/">Home</Link>
-            <Link className="nav-link" href="detalle/resultados">Listado</Link>
+            <Link className="nav-link" href="resultados">Listado</Link>
           </Nav>
         </Container>
       </Navbar>
