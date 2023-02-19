@@ -2,6 +2,7 @@ import { React} from "react";
 import Head from "next/head";
 import { getFotos } from "@/api/HomeGet";
 
+
 const id = (props) => {
 
 
@@ -33,8 +34,9 @@ const id = (props) => {
 
 export default id;
 
+
 export async function getStaticPaths(){
-      
+
   const fetchData = async  ()=> {
 
     const rutas = [{}];

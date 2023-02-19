@@ -9,10 +9,7 @@ import { useSearchParams } from 'next/navigation';
 
 const resultados = () => {
 
-      const searchParams = useSearchParams();
-
-
-
+    const searchParams = useSearchParams();
     const [busqueda, setBusqueda] = useState([]);
     const [total, setTotal] = useState();
     const [page, setPage] = useState(1);
@@ -43,7 +40,7 @@ const resultados = () => {
     return (
   
       <>
-        <div className="d-flex justify-content-center flex-row gap-3 flex-wrap  m-5">
+        <div className="d-flex justify-content-center flex-row gap-3 flex-wrap   m-5">
         { busqueda.length > 0 ? 
             busqueda.map((element) => (
               <>
