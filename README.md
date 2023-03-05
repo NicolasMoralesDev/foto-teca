@@ -5,13 +5,11 @@ Proyecto realizado en Next.js. Aplicacion web de busqueda y descarga de imagenes
 
 
 
-
-
-![Logo](https://firebasestorage.googleapis.com/v0/b/fotos-cde1e.appspot.com/o/Foto-Teca_Portada.PNG?alt=media&token=b5f5d3c4-6285-4b63-a750-d11bd52cec9f)
+![Logo](https://firebasestorage.googleapis.com/v0/b/fotos-cde1e.appspot.com/o/Foto-Teca_Portada.PNG?alt=media&token=91d9e8c1-cfce-410c-b349-fd5bfff8a625)
 
 
 ## 🚀 Seguime
-Me llamo Nicolas soy un joven estudiante apasionado por la tecnologia y el desarrollo de software ademas co-creer Luno. Seguime en mis redes para conocer mas sobre mi trabajo.
+Me llamo Nicolas soy un joven estudiante apasionado por la tecnologia y el desarrollo de software ademas co-creer Luno , una agencia digital de desarrollo web. Seguime en mis redes para conocer mas sobre mi trabajo.
 
 - Github [@NicolasMoralesDev](https://github.com/NicolasMoralesDev)
 
