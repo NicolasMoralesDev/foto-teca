@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
         if ( busqueda.length < 4 ) {  swal("Por favor ingrese una busqueda!", "maximo 4 caracteres" , "warning");
       } else {
       router.push( `resultados?q=${busqueda}`);
-    
+    /* modal */
     } }
   
     return (
